@@ -15,4 +15,57 @@ body{
     height: 100vh;
     border-style: solid;
     border-color: #EBECF1;
+    border-width: 2px;
+}
+
+#sidebarUser > img{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#sidebarUser {
+    width: 100%;
+    height: 3vw;
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #383761;
+}
+
+#sidebarSubMenu > h3{
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    color: #6E9BFF;
+    margin-left: 10%;
+}
+
+.sidebarDoubleSubMenu{
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.sidebarDoubleSubMenu > h2{
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    margin-left: 2%;
+    color: #D6D9DE;
+}
+
+.sidebarDoubleSubMenu > img{
+    width: 20px;
+    height: 20px;
+}
+
+#sidebarSubMenuOne > h3{
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    color: #6E9BFF;
+    margin-left: 10%;
 }
