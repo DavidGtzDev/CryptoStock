@@ -1,6 +1,6 @@
 body{
     margin: 0%;
-    background-color: #F5F5F5;
+    background-color: #F5F6FA;
 }
 
 #app{
@@ -16,6 +16,7 @@ body{
     border-style: solid;
     border-color: #EBECF1;
     border-width: 2px;
+    position: fixed;
 }
 
 #sidebarUser > img{
@@ -58,6 +59,11 @@ body{
     color: #D6D9DE;
 }
 
+.sidebarDoubleSubMenu > h2:hover{
+    cursor: pointer;
+    color: #6E9BFF;
+}
+
 .sidebarDoubleSubMenu > img{
     width: 20px;
     height: 20px;
@@ -68,4 +74,82 @@ body{
     font-family: 'Inter', sans-serif;
     color: #6E9BFF;
     margin-left: 10%;
+}
+
+.chartcard{
+    width: 100%;
+    background-color: white;
+    height: 30vh;
+    margin: 15px;
+    border-radius: 10px;
+    border-color: #EBECF1;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.mainScreen{
+    margin-left: 20%;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.chartcard-logo{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.chartcard-chartImage{
+    width: 90%;
+    height: 20vh;
+    margin-left: 15px;
+}
+
+.navbar > img{
+    height: 5vh;
+    margin-left: 10px;
+}
+
+.organizerdivOne{
+    display: flex;
+    width: 100%;
+}
+
+.myTokens{
+    width: 50%;
+    height: 35vh;
+    background-color: white;
+    margin-left: 35px;
+    margin-top: 15px;
+    border-style: solid;
+    border-color: #EBECF1;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+}
+
+.myTokens > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.myTokens > div > h2{
+    font-size: 13px;
+}
+
+.myTokens > div > h3{
+    font-size: 13px;
+    color: #D6D9DE;
 }
