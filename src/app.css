@@ -164,4 +164,40 @@ body{
     border-style: solid;
     border-color: #EBECF1;
     border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-card-logo-img{
+    width: 25%;
+}
+
+.company-card-subdiv-company-status{
+    display: flex;
+    font-size: 10px;
+    font-family: 'Inter';
+    color: #D6D9DE;
+    align-items: center;
+
+}
+
+.company-card-subdiv-company-status > img{
+    width: 20px;
+    height: 20px;
+}
+
+.company-card-subdiv-company-name{
+    width: 100%;
+    display: flex;
+    font-size: 10px;
+    margin-left: 25px;
+    font-family: 'Inter';
+    font-style: bold;
+}
+
+.company-card-subdiv-decoration-line{
+    width: 90%;
+    height: 2px;
+    background-color: #D6D9DE;
 }
