@@ -5,6 +5,7 @@ import buyPic from "../../assets/icons8-buy-for-cash-50.png"
 import portfolioPic from "../../assets/icons8-portfolio-50.png"
 import popularPic from "../../assets/icons8-star-50.png"
 import mailPic from "../../assets/icons8-mail-50.png"
+import { NavLink } from "react-router-dom"
 
 export default function Sidebar() {
   return (
@@ -19,19 +20,27 @@ export default function Sidebar() {
         <h3>Featured</h3>
         <div className="sidebarDoubleSubMenu">
           <img src={positionPic}></img>
-          <h2>My Position</h2>
+          <NavLink to="/" style={{ textDecoration: 'none' , width: "100%"}}>
+            <h2 className="sidebar-navlink">My Position</h2>
+          </NavLink>
         </div>
         <div className="sidebarDoubleSubMenu">
           <img src={mintPic}></img>
-          <h2>Mint/Burn</h2>
+          <NavLink to="/mint_burn" style={{ textDecoration: 'none' , width: "100%"}}>
+            <h2 className="sidebar-navlink">Mint/Burn</h2>
+          </NavLink>
         </div>
         <div className="sidebarDoubleSubMenu">
           <img src={buyPic}></img>
-          <h2>Buy/Sell</h2>
+          <NavLink to="/buy_sell" style={{ textDecoration: 'none' , width: "100%"}}>
+            <h2 className="sidebar-navlink">Buy/Sell</h2>
+          </NavLink>
         </div>
         <div className="sidebarDoubleSubMenu">
           <img src={positionPic}></img>
-          <h2>Options</h2>
+          <NavLink to="/options" style={{ textDecoration: 'none' , width: "100%"}}>
+            <h2 className="sidebar-navlink">Options</h2>
+          </NavLink>
         </div>
 
 
@@ -39,15 +48,21 @@ export default function Sidebar() {
           <h3>Tools</h3>
           <div className="sidebarDoubleSubMenu">
             <img src={portfolioPic}></img>
-            <h2>Portfolio Automatization</h2>
+            <NavLink to="/portfolio_automatization" style={{ textDecoration: 'none' , width: "100%"}}>
+              <h2 className="sidebar-navlink">Portfolio Automatization</h2>
+            </NavLink>
           </div>
           <div className="sidebarDoubleSubMenu">
             <img src={popularPic}></img>
-            <h2>Popular</h2>
+            <NavLink to="/popular" style={{ textDecoration: 'none' , width: "100%"}}>
+              <h2 className="sidebar-navlink">Popular</h2>
+            </NavLink>
           </div>
           <div className="sidebarDoubleSubMenu">
             <img src={mailPic}></img>
-            <h2>Messages</h2>
+            <NavLink to="/messages" style={{ textDecoration: 'none' , width: "100%"}}>
+              <h2 className="sidebar-navlink">Messages</h2>
+            </NavLink>
           </div>
         </div>
         
