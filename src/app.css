@@ -91,6 +91,7 @@ body{
 .Screen{
     margin-left: 20%;
     width: 100%;
+    height: 100vh;
 }
 
 .navbar{
@@ -123,9 +124,7 @@ body{
     width: 100%;
 }
 
-.myTokens{
-    width: 50%;
-    height: 35vh;
+.myTable{
     background-color: white;
     margin-left: 35px;
     margin-top: 15px;
@@ -137,20 +136,21 @@ body{
     font-size: 13px;
     font-weight: bold;
     display: flex;
+    justify-content: space-around;
 }
 
-.myTokens > div{
+.myTable > div{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px;
 }
 
-.myTokens > div > h2{
+.myTable > div > h2{
     font-size: 13px;
 }
 
-.myTokens > div > h3{
+.myTable > div > h3{
     font-size: 13px;
     color: #D6D9DE;
 }
@@ -171,6 +171,7 @@ body{
 
 .company-card-logo-img{
     width: 25%;
+    margin-top: 15px;
 }
 
 .company-card-subdiv-company-status{
@@ -200,4 +201,31 @@ body{
     width: 90%;
     height: 2px;
     background-color: #D6D9DE;
+}
+
+.burn-mint-title{
+    font-size: 30px;
+    font-family: 'Inter';
+    font-style: bold;
+    margin-left: 15px;
+    color: #383761;
+}
+
+.burn-mint-card-container{
+    display: flex;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+.company-card:hover{
+    cursor: pointer;
+    color: #6E9BFF;
+}
+
+.options-title{
+    font-size: 30px;
+    font-family: 'Inter';
+    font-style: bold;
+    margin-left: 15px;
+    color: #383761;
 }

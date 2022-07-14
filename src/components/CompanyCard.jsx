@@ -1,13 +1,11 @@
-import AppleLogo from "../../assets/580b57fcd9996e24bc43c516.png"
-import LineSVG from "../../assets/line.svg"
 import StockIMG from "../../assets/icons8-stocks-growth-48.png"
 
-export default function CompanyCard() {
+export default function CompanyCard(props) {
   return (
     <div className="company-card">
-      <img src={AppleLogo} className="company-card-logo-img"></img>
+      <img src={props.logo} className="company-card-logo-img"></img>
       <div className="company-card-subdiv-company-name">
-        <h2>Apple</h2>
+        <h2>{props.name}</h2>
       </div>
       <div className="company-card-subdiv-decoration-line"></div>
       <div className="company-card-subdiv-company-status">
