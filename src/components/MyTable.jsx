@@ -9,10 +9,12 @@ export default function MyTable(props) {
       const data = myData
       let obj = {}
 
+
       for(let i = 0; i < data.length; i++){
         obj[data[i][1][1]] = data[i][comp[0] + 1][1]
       }
       props.setMyPublicData(obj)
+
     }
 
     function loadElements() {

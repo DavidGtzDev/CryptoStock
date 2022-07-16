@@ -5,9 +5,12 @@ import MicrosoftLogo from "../../assets/Microsoft-Logo-icon-png-Transparent-Back
 import TeslaLogo from "../../assets/Tesla_T_symbol.svg.png"
 import MyTable from "../components/MyTable"
 import { useState } from "react"
+import Backdrop from "../components/Backdrop"
+import MyModal from "../components/MyModal"
 
 export default function MainScreen() {
   const [data,setData] = useState()
+  const [isOpen,setIsOpen] = useState(false)
   const demo = [
     [0, [0, "Name"], [1, "Apple"], [2, "Microsoft"], [3, "Tesla"]],
     [0, [0, "Quantity"], [1, "4"], [2, "5"], [3, "12"]],
@@ -25,8 +28,9 @@ export default function MainScreen() {
               <ChartCard logo={MicrosoftLogo}></ChartCard>
               <ChartCard logo={TeslaLogo}></ChartCard>
             </div>
-            <MyTable elements={demo} setMyPublicData={setData()}></MyTable>
-            <button></button>
+            <MyTable elements={demo} setMyPublicData={setData}></MyTable>
+            <button onClick={e => setIsOpen(true)}>AAAA</button>
+            <Backdrop isOpen={isOpen} child={<MyModal setIsOpen={setIsOpen}></MyModal>}></Backdrop>
           </div>
         </div>
   )
