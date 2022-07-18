@@ -8,9 +8,9 @@ import Options from "./screens/Options";
 import PortfolioAutomatization from "./screens/PortfolioAutomatization";
 import Popular from "./screens/Popular";
 import Messages from "./screens/Messages";
+import { useState, useEffect} from "react"
 
 function App() {
-
   return (
     <BrowserRouter>
     <Sidebar></Sidebar>

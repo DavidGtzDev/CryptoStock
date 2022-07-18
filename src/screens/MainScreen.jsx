@@ -8,7 +8,7 @@ import { useState } from "react"
 import Backdrop from "../components/Backdrop"
 import MyModal from "../components/MyModal"
 
-export default function MainScreen() {
+export default function MainScreen(props) {
   const [data,setData] = useState()
   const [isOpen,setIsOpen] = useState(false)
   const demo = [
@@ -28,10 +28,10 @@ export default function MainScreen() {
               <ChartCard logo={MicrosoftLogo}></ChartCard>
               <ChartCard logo={TeslaLogo}></ChartCard>
             </div>
-            <MyTable elements={demo} setMyPublicData={setData}></MyTable>
-            <button onClick={e => setIsOpen(true)}>AAAA</button>
-            <Backdrop isOpen={isOpen} child={<MyModal setIsOpen={setIsOpen}></MyModal>}></Backdrop>
+            <MyTable elements={demo} setMyPublicData={setData} modalSignal={setIsOpen}></MyTable>
+            <Backdrop isOpen={isOpen} child={<MyModal setIsOpen={setIsOpen} modalData={data} setModalData={setData}></MyModal>}></Backdrop>
           </div>
+          
         </div>
   )
 }

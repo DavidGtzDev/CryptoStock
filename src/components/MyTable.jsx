@@ -14,6 +14,7 @@ export default function MyTable(props) {
         obj[data[i][1][1]] = data[i][comp[0] + 1][1]
       }
       props.setMyPublicData(obj)
+      props.modalSignal(true)
 
     }
 
